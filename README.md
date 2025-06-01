@@ -82,7 +82,7 @@ This app runs locally at:
 
 ## Technologies Used
 
-- Angular 15+
+- Angular 12+
 - OpenWeatherMap API
 - TypeScript, SCSS
 - Angular Environment Files
