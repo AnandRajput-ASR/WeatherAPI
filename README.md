@@ -1,27 +1,88 @@
-# WeatherApp
+# Angular Weather App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.18.
+A simple Angular application to fetch and display current weather data for any city using the OpenWeatherMap API.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Features
 
-## Code scaffolding
+- Search weather by city name
+- Displays temperature, humidity, wind speed, and weather description
+- Responsive and clean UI
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+---
 
-## Build
+## Demo
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+This app runs locally at:  
+`http://localhost:4200`
 
-## Running unit tests
+---
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Getting Started
 
-## Running end-to-end tests
+### Prerequisites
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- Node.js and npm installed
+- Angular CLI installed globally (`npm install -g @angular/cli`)
+- OpenWeatherMap API key (free signup at [openweathermap.org](https://openweathermap.org/api))
 
-## Further help
+## Installation
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+1. **Clone the repo:**
+
+   ```bash
+   git clone https://github.com/AnandRajput-ASR/WeatherAPI.git
+   cd weatherApp
+   ```
+
+2. **Install dependencies:**
+
+   ```bash
+   npm install
+   ```
+
+3. **Add your OpenWeatherMap API key:**
+
+   Open both of the following files and replace `'YOUR_API_KEY_HERE'` with your actual API key:
+
+   - `src/environments/environment.ts`
+   - `src/environments/environment.prod.ts`
+
+   Example:
+
+   ```ts
+   export const environment = {
+     production: false,
+     weatherApiKey: 'YOUR_API_KEY_HERE'
+   };
+   ```
+
+4. **Run the app:**
+
+   ```bash
+   ng serve
+   ```
+
+5. **Open your browser at:**
+
+   ```
+   http://localhost:4200
+   ```
+
+---
+
+## Usage
+
+- Enter a city name in the input box
+- Press "Get Weather" button or hit Enter
+- View current temperature, humidity, wind speed, and weather description
+
+---
+
+## Technologies Used
+
+- Angular 15+
+- OpenWeatherMap API
+- TypeScript, SCSS
+- Angular Environment Files
